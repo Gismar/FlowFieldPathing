@@ -16,9 +16,9 @@ Unlike A* which finds the absolute shortest path, Flow Fields find all possible 
 When you need multiple objects to chase after a target frequently. As it is computes every possible path in a simple manner.
 
 ## How I Made It Special
-Instead of constantly computing a field, I instead computed a 20 x 20 tile field for every possible tile in a game map,
+Instead of constantly computing a field, I instead computed a 10 x 10 tile field for every possible tile in a game map,
 and stored them into a dictionary. The dictionary is then accessed using the player's position. 
-`Dictionary<Vector2Int, List<VectorTile>` Where the `Vector2Int` is the player's position, and `List<VectorTile>` is the flow field.
+`Dictionary<Vector2Int, List<VectorTile>>` Where the `Vector2Int` is the player's position, and `List<VectorTile>` is the flow field.
 Furthermore, I use multiple threads to compute the flow field for each chunk of the map.
 
 ## Unity-ized
