@@ -2,7 +2,7 @@
 >Using multi-threading to generate a Flow Field that allows infinite amount of enemies to chase a player.
 
 ## What is this?
-This algorithm creates a 20 x 20 (specifically made like this for a game) Vector Flow Field for every tile possible. 
+This algorithm creates a 10 x 10 (specifically made like this for a game) Vector Flow Field for every tile possible. 
 In addition it splits the work into other threads while main thread creates fields for the player's current position. 
 This allows players to interact with the game and enemies without having to wait for the level to be finished.
 
